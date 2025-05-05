@@ -1,0 +1,187 @@
+/* DoctorCard.css */
+.doctor-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.favorite-btn i {
+  color: #ddd;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.favorite-btn i.active {
+  color: #e74e84;
+}
+
+.favorite-btn:hover i:not(.active) {
+  color: #e74e84;
+}
+
+.doctor-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  color: #0070cd;
+}
+
+.placeholder-image i {
+  font-size: 3rem;
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+.specialty {
+  color: #999;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.doctor-name {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.rating-container {
+  margin-bottom: 20px;
+}
+
+.rating-stars {
+  margin: 0;
+  padding: 0;
+}
+
+.rating-stars .list-inline-item {
+  margin-right: 2px;
+}
+
+.rating-stars .fa-star {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.rating-stars .fa-star.voted {
+  color: #ffc107;
+}
+
+.review-count {
+  color: #999;
+  margin-left: 5px;
+}
+
+.doctor-actions {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-buttons a, 
+.action-buttons button {
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-map {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.btn-directions {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.btn-details {
+  background-color: #0070cd;
+  color: white;
+}
+
+.btn-map:hover, .btn-directions:hover {
+  background-color: #e9ecef;
+}
+
+.btn-details:hover {
+  background-color: #005ba4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .doctor-image {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 15px 0;
+  }
+  
+  .action-buttons {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

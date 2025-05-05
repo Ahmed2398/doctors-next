@@ -1,0 +1,29 @@
+.view-toggles {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.view-toggle-btn {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #999;
+  transition: all 0.2s ease;
+}
+
+.view-toggle-btn.active {
+  color: #0070cd;
+  background-color: rgba(0, 112, 205, 0.1);
+  border-radius: 4px;
+}
+
+.view-toggle-btn:hover:not(.active) {
+  background-color: #f8f9fa;
+}
+
+.view-toggle-btn i {
+  margin-right: 5px;
+}

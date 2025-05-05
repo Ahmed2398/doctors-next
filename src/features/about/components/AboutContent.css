@@ -1,0 +1,120 @@
+.about-content {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.divider {
+  height: 3px;
+  width: 70px;
+  background-color: #0070cd;
+  margin-bottom: 30px;
+}
+
+.about-mission h3,
+.about-vision h3,
+.about-story h3 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.about-mission p,
+.about-vision p,
+.about-story p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.feature-box {
+  padding: 25px 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+}
+
+.feature-icon i {
+  color: #0070cd;
+}
+
+.feature-box h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.feature-box p {
+  color: #666;
+}
+
+.team-member {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 5px solid #f8f9fa;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-mission h3,
+  .about-vision h3,
+  .about-story h3 {
+    font-size: 1.3rem;
+  }
+  
+  .about-mission p,
+  .about-vision p,
+  .about-story p {
+    font-size: 1rem;
+  }
+  
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+}

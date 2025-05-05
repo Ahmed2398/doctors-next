@@ -1,0 +1,26 @@
+.doctors-content {
+  padding-bottom: 40px;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}

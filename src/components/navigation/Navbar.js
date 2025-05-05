@@ -4,6 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './Navbar.css';
+import { LOGIN } from '../../constants/routes';
+
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -30,8 +32,8 @@ const Navbar = () => {
             <li className={`nav-item ${pathname === '/doctors' ? 'active' : ''}`}>
               <Link href="/doctors" className="nav-link">Doctors</Link>
             </li>
-            <li className={`nav-item ${pathname === '/blog' ? 'active' : ''}`}>
-              <Link href="/blog" className="nav-link">Blog</Link>
+            <li className={`nav-item ${pathname === '/contact' ? 'active' : ''}`}>
+              <Link href="/contact" className="nav-link">Contact us</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,7 +51,7 @@ const Navbar = () => {
               <Link href="/faq" className="nav-link">F&A&Q</Link>
             </li>
             <li className={`nav-item ${pathname === '/login' ? 'active' : ''}`}>
-              <Link href="/login" className="nav-link">Login</Link>
+              <Link href={LOGIN} className="nav-link">Login</Link>
             </li>
           </ul>
         </div>
