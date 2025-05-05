@@ -1,0 +1,35 @@
+/* Verify Email styles */
+.verify-email-container {
+  background-color: #f8f9fa;
+}
+
+.verify-title {
+  color: #0070cd;
+  font-weight: 600;
+}
+
+.verification-icon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.success-icon {
+  color: #28a745;
+}
+
+.error-icon {
+  color: #dc3545;
+}
+
+/* Override Bootstrap button styles */
+.btn-primary {
+  background-color: #0070cd;
+  border-color: #0070cd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #005ba4;
+  border-color: #005ba4;
+}

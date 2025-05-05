@@ -1,0 +1,21 @@
+/* Upper bar styling */
+.upper-bar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  padding: 7px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.upper-bar .info i {
+  margin-right: 5px;
+  color: #0070cd;
+}
+
+.upper-bar .border-separator {
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #ddd;
+  vertical-align: middle;
+}

@@ -1,0 +1,30 @@
+/* Custom navbar styling for R.vezeeta */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand span:first-child {
+  color: #0070cd;
+  font-weight: bold;
+}
+
+.navbar-brand span:last-child {
+  color: #333;
+  font-weight: normal;
+}
+
+.nav-item.active .nav-link {
+  color: #0070cd !important;
+  font-weight: bold;
+}
+
+.nav-item .nav-link:hover {
+  color: #0070cd;
+}
+
+.dropdown-item:active, 
+.dropdown-item:hover {
+  background-color: #e9f5ff;
+  color: #0070cd;
+}
